@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9 Reasons Women Are Obsessed With Lem | Hello Nancy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── CSS RESET & CUSTOM PROPERTIES ── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --pink: #ff30cc;
+      --pink-light: rgba(255, 48, 204, 0.08);
+      --neon: #ccfd28;
+      --cream: #fcf7ed;
+      --cream-dark: #f3ede7;
+      --black: #1a1a1a;
+      --charcoal: #333333;
+      --white: #ffffff;
+      --star: #ffb74a;
+      --green: #2DC653;
+      --gray: #797979;
+      --font-heading: 'Fraunces', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --max-width: 1200px;
+      --border: 1px solid rgba(0,0,0,0.1);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); color: var(--black); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── STICKY HEADER (ARMRA Innovation #1) ── */
+    .sticky-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      background: var(--white);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px;
+      transition: box-shadow 0.3s;
+    }
+    .sticky-header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .sticky-header__logo img { height: 28px; width: auto; }
+    .sticky-header__cta {
+      background: var(--black); color: var(--white);
+      padding: 10px 24px; border-radius: 50px;
+      font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+      text-transform: uppercase; cursor: pointer; border: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .sticky-header__cta:hover { background: var(--charcoal); transform: translateY(-1px); }
+
+    /* ── URGENCY BANNER ── */
+    .urgency-banner {
+      margin-top: 60px;
+      background: var(--pink); color: var(--cream);
+      text-align: center; padding: 10px 16px;
+      font-size: 13px; font-weight: 500; letter-spacing: 0.3px;
+    }
+    .urgency-banner span { font-weight: 700; }
+
+    /* ── HERO SECTION ── */
+    .hero {
+      background: linear-gradient(180deg, var(--white) 0%, var(--cream) 100%);
+      padding: 60px 24px 40px;
+    }
+    .hero__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 40px; align-items: center;
+    }
+    .hero__stars {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 16px;
+    }
+    .hero__stars svg { color: var(--star); }
+    .hero__stars-text { font-size: 13px; color: var(--gray); font-weight: 500; }
+    .hero__title {
+      font-family: var(--font-heading); font-size: clamp(28px, 4vw, 42px);
+      font-weight: 600; line-height: 1.2; margin-bottom: 16px;
+      color: var(--black);
+    }
+    .hero__subtitle {
+      font-size: 15px; color: #555; line-height: 1.7;
+      margin-bottom: 24px; max-width: 480px;
+    }
+    .hero__cta {
+      display: inline-block;
+      background: var(--black); color: var(--white);
+      padding: 16px 40px; border-radius: 50px;
+      font-size: 15px; font-weight: 600; letter-spacing: 0.5px;
+      text-transform: uppercase; cursor: pointer; border: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .hero__cta:hover { background: var(--charcoal); transform: translateY(-1px); }
+    .hero__promo {
+      font-size: 12px; color: var(--gray); margin-top: 10px;
+    }
+    .hero__image {
+      border-radius: 16px; overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .hero__image img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+
+    /* ── PRESS LOGOS BAR ── */
+    .press-bar {
+      background: var(--white);
+      padding: 24px;
+      border-top: var(--border); border-bottom: var(--border);
+    }
+    .press-bar__inner {
+      max-width: var(--max-width); margin: 0 auto;
+      display: flex; align-items: center; justify-content: center;
+      gap: 40px; flex-wrap: wrap;
+    }
+    .press-bar__label {
+      font-size: 12px; color: var(--gray); text-transform: uppercase;
+      letter-spacing: 1px; font-weight: 600; white-space: nowrap;
+    }
+    .press-bar__logos {
+      display: flex; align-items: center; gap: 32px; flex-wrap: wrap;
+      justify-content: center;
+    }
+    .press-bar__logos img {
+      height: 22px; width: auto; opacity: 0.5;
+      filter: grayscale(100%);
+      transition: opacity 0.3s, filter 0.3s;
+    }
+    .press-bar__logos img:hover { opacity: 0.8; filter: grayscale(0%); }
+
+    /* ── REASON SECTIONS (Alternating 2-col) ── */
+    .reason {
+      padding: 60px 24px;
+      border-bottom: var(--border);
+    }
+    .reason__inner {
+      max-width: var(--max-width); margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: center;
+    }
+    .reason--reverse .reason__inner { direction: rtl; }
+    .reason--reverse .reason__inner > * { direction: ltr; }
+    .reason__image {
+      border-radius: 12px; overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+    .reason__image img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+    .reason__badge {
+      display: inline-block;
+      background: var(--neon); color: var(--black);
+      padding: 4px 14px; border-radius: 50px;
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.5px; margin-bottom: 16px;
+    }
+    .reason__title {
+      font-family: var(--font-heading); font-size: clamp(22px, 3vw, 30px);
+      font-weight: 600; line-height: 1.3; margin-bottom: 16px;
+    }
+    .reason__text {
+      font-size: 15px; color: #555; line-height: 1.75; margin-bottom: 20px;
+    }
+    /* ARMRA Innovation #2: Highlight box on key claim */
+    .reason__highlight {
+      display: inline;
+      background: var(--neon); padding: 2px 8px;
+      font-weight: 600; color: var(--black);
+    }
+    .reason__cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--black); color: var(--white);
+      padding: 12px 28px; border-radius: 50px;
+      font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+      text-transform: uppercase; border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .reason__cta:hover { background: var(--charcoal); transform: translateY(-1px); }
+    .reason__cta-promo {
+      display: block; font-size: 11px; color: var(--gray);
+      margin-top: 8px; font-weight: 500;
+    }
+
+    /* ── TESTIMONIAL STORY BREAK (ARMRA Innovation #3) ── */
+    .testimonial-break {
+      background: var(--cream);
+      padding: 64px 24px;
+      border-top: var(--border); border-bottom: var(--border);
+    }
+    .testimonial-break__inner {
+      max-width: 720px; margin: 0 auto; text-align: center;
+    }
+    .testimonial-break__quote-mark {
+      font-family: var(--font-heading); font-size: 64px;
+      color: var(--pink); line-height: 1; margin-bottom: 8px;
+    }
+    .testimonial-break__text {
+      font-family: var(--font-heading); font-size: clamp(18px, 2.5vw, 22px);
+      font-weight: 400; font-style: italic; line-height: 1.7;
+      color: var(--black); margin-bottom: 20px;
+    }
+    .testimonial-break__author {
+      font-size: 14px; font-weight: 600; color: var(--black);
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .testimonial-break__verified {
+      font-size: 12px; color: var(--green); font-weight: 500;
+      display: flex; align-items: center; justify-content: center; gap: 4px;
+      margin-top: 4px;
+    }
+
+    /* ── COMPARISON SECTION (ARMRA Innovation #4) ── */
+    .comparison {
+      padding: 64px 24px;
+      background: var(--white);
+      border-bottom: var(--border);
+    }
+    .comparison__inner { max-width: 800px; margin: 0 auto; }
+    .comparison__title {
+      font-family: var(--font-heading); font-size: clamp(24px, 3vw, 32px);
+      font-weight: 600; text-align: center; margin-bottom: 40px;
+    }
+    .comparison__table {
+      width: 100%; border-collapse: collapse;
+      border: 1px solid rgba(0,0,0,0.08); border-radius: 12px;
+      overflow: hidden;
+    }
+    .comparison__table thead { background: var(--cream); }
+    .comparison__table th {
+      padding: 14px 20px; text-align: left;
+      font-size: 13px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.5px; color: var(--black);
+    }
+    .comparison__table th:first-child { width: 35%; }
+    .comparison__table th.highlight { background: var(--neon); color: var(--black); }
+    .comparison__table td {
+      padding: 14px 20px; font-size: 14px; color: #555;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .comparison__table td.highlight { background: rgba(204,253,40,0.1); font-weight: 600; color: var(--black); }
+    .comparison__table .check { color: var(--green); font-size: 18px; }
+    .comparison__table .cross { color: #ddd; font-size: 18px; }
+
+    /* ── BENEFITS GRID (ARMRA Innovation #5) ── */
+    .benefits-grid {
+      background: var(--neon);
+      padding: 64px 24px;
+      border-top: 1px solid var(--black); border-bottom: 1px solid var(--black);
+    }
+    .benefits-grid__inner {
+      max-width: var(--max-width); margin: 0 auto;
+    }
+    .benefits-grid__title {
+      font-family: var(--font-heading); font-size: clamp(24px, 3vw, 32px);
+      font-weight: 600; text-align: center; margin-bottom: 48px;
+      color: var(--black);
+    }
+    .benefits-grid__items {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .benefits-grid__item { text-align: center; }
+    .benefits-grid__stat {
+      font-family: var(--font-heading); font-size: 56px;
+      font-weight: 700; color: var(--black); line-height: 1;
+      margin-bottom: 8px;
+    }
+    .benefits-grid__stat-label {
+      font-size: 14px; color: var(--charcoal); max-width: 200px;
+      margin: 0 auto; line-height: 1.5;
+    }
+
+    /* ── 3-COLUMN REVIEW CARDS (ARMRA Innovation #6) ── */
+    .review-cards {
+      padding: 64px 24px;
+      background: var(--white);
+      border-bottom: var(--border);
+    }
+    .review-cards__inner { max-width: var(--max-width); margin: 0 auto; }
+    .review-cards__title {
+      font-family: var(--font-heading); font-size: clamp(24px, 3vw, 32px);
+      font-weight: 600; text-align: center; margin-bottom: 48px;
+    }
+    .review-cards__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .review-card {
+      border: 1px solid rgba(0,0,0,0.1); border-radius: 12px;
+      padding: 28px; display: flex; flex-direction: column;
+    }
+    .review-card__tag {
+      display: inline-block; width: fit-content;
+      background: var(--pink-light); color: var(--pink);
+      padding: 3px 10px; border-radius: 50px;
+      font-size: 11px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.5px; margin-bottom: 14px;
+    }
+    .review-card__stars {
+      color: var(--star); font-size: 14px; margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+    .review-card__title {
+      font-family: var(--font-heading); font-size: 16px;
+      font-weight: 600; margin-bottom: 10px; line-height: 1.3;
+    }
+    .review-card__text {
+      font-size: 14px; color: #555; line-height: 1.7;
+      flex: 1; margin-bottom: 16px;
+    }
+    .review-card__author {
+      font-size: 13px; font-weight: 600; color: var(--black);
+    }
+    .review-card__verified {
+      font-size: 11px; color: var(--green); display: flex;
+      align-items: center; gap: 4px; margin-top: 2px;
+    }
+
+    /* ── PRODUCT CTA SECTION ── */
+    .product-cta {
+      padding: 80px 24px;
+      background: var(--cream);
+      text-align: center;
+    }
+    .product-cta__inner { max-width: 600px; margin: 0 auto; }
+    .product-cta__title {
+      font-family: var(--font-heading); font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 600; margin-bottom: 12px; color: var(--pink);
+    }
+    .product-cta__subtitle {
+      font-size: 15px; color: #555; margin-bottom: 32px; line-height: 1.7;
+    }
+    .product-cta__image {
+      width: 280px; height: 280px; margin: 0 auto 32px;
+      border-radius: 16px; overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .product-cta__image img { width: 100%; height: 100%; object-fit: cover; }
+    .product-cta__price {
+      margin-bottom: 24px;
+    }
+    .product-cta__price-original {
+      font-size: 16px; color: var(--gray);
+      text-decoration: line-through; margin-right: 8px;
+    }
+    .product-cta__price-sale {
+      font-family: var(--font-heading); font-size: 32px;
+      font-weight: 700; color: var(--black);
+    }
+    .product-cta__price-badge {
+      display: inline-block; background: var(--pink);
+      color: var(--white); padding: 4px 12px; border-radius: 50px;
+      font-size: 12px; font-weight: 700; margin-left: 8px;
+      vertical-align: middle;
+    }
+    .product-cta__btn {
+      display: inline-block;
+      background: var(--black); color: var(--white);
+      padding: 18px 56px; border-radius: 50px;
+      font-size: 16px; font-weight: 600; letter-spacing: 0.5px;
+      text-transform: uppercase; cursor: pointer; border: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .product-cta__btn:hover { background: var(--charcoal); transform: translateY(-1px); }
+    .product-cta__trust {
+      display: flex; align-items: center; justify-content: center;
+      gap: 24px; margin-top: 20px; font-size: 12px; color: var(--gray);
+    }
+    .product-cta__trust span {
+      display: flex; align-items: center; gap: 4px;
+    }
+
+    /* ── STATS SECTION ── */
+    .stats {
+      padding: 64px 24px;
+      background: var(--white);
+      border-top: var(--border);
+    }
+    .stats__inner { max-width: var(--max-width); margin: 0 auto; }
+    .stats__title {
+      font-family: var(--font-heading); font-size: clamp(22px, 3vw, 28px);
+      font-weight: 600; text-align: center; margin-bottom: 40px;
+    }
+    .stats__grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+    }
+    .stat-circle { text-align: center; }
+    .stat-circle__ring {
+      width: 140px; height: 140px; margin: 0 auto 16px;
+      border-radius: 50%; position: relative;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .stat-circle__ring svg { position: absolute; top: 0; left: 0; transform: rotate(-90deg); }
+    .stat-circle__value {
+      font-family: var(--font-heading); font-size: 36px;
+      font-weight: 700; color: var(--black); position: relative; z-index: 1;
+    }
+    .stat-circle__label {
+      font-size: 14px; color: #555; max-width: 180px;
+      margin: 0 auto; line-height: 1.5;
+    }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      padding: 64px 24px;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--white) 100%);
+      text-align: center;
+      border-top: var(--border);
+    }
+    .final-cta__inner { max-width: 560px; margin: 0 auto; }
+    .final-cta__logo { height: 32px; margin: 0 auto 24px; }
+    .final-cta__text {
+      font-family: var(--font-heading); font-size: clamp(20px, 2.5vw, 26px);
+      font-weight: 500; margin-bottom: 24px; line-height: 1.5;
+    }
+    .final-cta__btn {
+      display: inline-block;
+      background: var(--black); color: var(--white);
+      padding: 16px 48px; border-radius: 50px;
+      font-size: 15px; font-weight: 600; letter-spacing: 0.5px;
+      text-transform: uppercase; cursor: pointer; border: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .final-cta__btn:hover { background: var(--charcoal); transform: translateY(-1px); }
+
+    /* ── FOOTER (Ultra-minimal, ARMRA Innovation #8) ── */
+    .footer {
+      background: var(--charcoal); color: rgba(255,255,255,0.6);
+      text-align: center; padding: 24px;
+      font-size: 12px;
+    }
+    .footer a { color: rgba(255,255,255,0.8); text-decoration: underline; }
+
+    /* ── MOBILE RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero__inner { grid-template-columns: 1fr; text-align: center; }
+      .hero__subtitle { margin: 0 auto 24px; }
+      .hero__image { order: -1; max-width: 320px; margin: 0 auto; }
+      .reason__inner { grid-template-columns: 1fr; }
+      .reason--reverse .reason__inner { direction: ltr; }
+      .reason__image { order: -1; max-width: 400px; margin: 0 auto; }
+      .benefits-grid__items { grid-template-columns: 1fr; gap: 40px; }
+      .review-cards__grid { grid-template-columns: 1fr; }
+      .stats__grid { grid-template-columns: 1fr; gap: 40px; }
+      .comparison__table { font-size: 13px; }
+      .comparison__table th, .comparison__table td { padding: 10px 12px; }
+      .press-bar__logos { gap: 20px; }
+      .press-bar__logos img { height: 18px; }
+      .sticky-header__cta { padding: 8px 16px; font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════ STICKY HEADER ═══════ -->
+  <header class="sticky-header" id="stickyHeader">
+    <a href="#" class="sticky-header__logo">
+      <img src="images/logo.png" alt="Nancy">
+    </a>
+    <a href="#product" class="sticky-header__cta">Shop Now — Up to 50% Off</a>
+  </header>
+
+  <!-- ═══════ URGENCY BANNER ═══════ -->
+  <div class="urgency-banner">
+    Spring Sale — <span>Up to 50% Off</span> + Free Discreet Shipping — No coupon needed
+  </div>
+
+  <!-- ═══════ HERO SECTION ═══════ -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <!-- Social proof FIRST (ARMRA pattern) -->
+        <div class="hero__stars">
+          <svg width="80" height="16" viewBox="0 0 80 16"><text x="0" y="14" font-size="14" fill="#ffb74a">★★★★★</text></svg>
+          <span class="hero__stars-text">4.7 stars · 15,000+ reviews · 1,000,000+ O's</span>
+        </div>
+        <h1 class="hero__title">9 Reasons Women Are Obsessed With Lem (& Why It Keeps Selling Out)</h1>
+        <p class="hero__subtitle">Lem is loved for a reason. It's whisper-quiet, made with soft medical-grade silicone, offers 12 intensity levels, and delivers air-suction that feels like focused oral — hitting the exact spot your body craves.</p>
+        <a href="#product" class="hero__cta">Unlock Your Best Orgasm</a>
+        <p class="hero__promo">Up to 50% Off + Free Discreet Shipping</p>
+      </div>
+      <div class="hero__image">
+        <img src="images/hero.webp" alt="Lem by Nancy — clitoral air-pulse massager" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PRESS LOGOS BAR ═══════ -->
+  <div class="press-bar">
+    <div class="press-bar__inner">
+      <span class="press-bar__label">As seen on</span>
+      <div class="press-bar__logos">
+        <img src="images/01_timeout_logo.png" alt="Time Out">
+        <img src="images/02_tatler_logo.webp" alt="Tatler">
+        <img src="images/03_sarasense_logo.webp" alt="Sara Sense">
+        <img src="images/04_zenify_logo.svg" alt="Zenify">
+        <img src="images/05_vice_logo.svg" alt="Vice">
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ REASON #1 — Image Left, Text Right ═══════ -->
+  <section class="reason">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/gallery-1.jpg" alt="Lem — compact and quiet" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #1</span>
+        <h2 class="reason__title">Whisper-Level Quiet. Deadly Effective.</h2>
+        <p class="reason__text">When we say quiet, we mean <em>whisper-quiet</em>. Lem delivers deep, powerful sensations with a soft, subtle hum that stays discreet even on higher settings. No buzzing through walls, no suspicious noise. <span class="reason__highlight">Your pleasure stays yours — quietly.</span></p>
+        <a href="#product" class="reason__cta">Shop Discreetly</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ REASON #2 — Image Right (reversed), Text Left ═══════ -->
+  <section class="reason reason--reverse">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/gallery-5.jpg" alt="Lem — travel-friendly lifestyle" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #2</span>
+        <h2 class="reason__title">Small Enough to Hide. Cute Enough to Display.</h2>
+        <p class="reason__text">Compact, discreet, and beautifully designed — Lem looks right at home on any nightstand and slips easily into any travel bag. <span class="reason__highlight">Lightweight, portable, and ready whenever you are.</span> Simple, stylish, and made to move with you from quiet nights in to spontaneous trips away.</p>
+        <a href="#product" class="reason__cta">Unlock the Pleasure</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ REASON #3 — Image Left, Text Right ═══════ -->
+  <section class="reason">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/gallery-4.jpg" alt="Lem — better than the Rose" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #3</span>
+        <h2 class="reason__title">Better Than Anything You've Tried Before</h2>
+        <p class="reason__text">The Rose had its moment, but Lem changed the conversation. <span class="reason__highlight">Quieter play, more intensity options, easier cleaning, better charging, and pleasure that lives up to the hype.</span> With 12 customizable settings and stimulation that hits the right spot every time, Lem delivers the kind of toe-curling release you don't forget.</p>
+        <a href="#product" class="reason__cta">Feel the Difference</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TESTIMONIAL STORY BREAK (ARMRA Innovation #3) ═══════ -->
+  <section class="testimonial-break">
+    <div class="testimonial-break__inner">
+      <div class="testimonial-break__quote-mark">"</div>
+      <p class="testimonial-break__text">Woman in her late 50s here. I bought my Lem with some skepticism — my sex drive had all but curled up and died and my magic wand wasn't getting me where I wanted to go IYKYK. Well, it's been a few years since I've had that strong of a climax, that quickly. I'm a convert. I don't know what kind of magic is in that little lemon, but it WORKS.</p>
+      <p class="testimonial-break__author">Linda</p>
+      <p class="testimonial-break__verified">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        Verified Buyer
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ REASON #4 — Image Right (reversed), Text Left ═══════ -->
+  <section class="reason reason--reverse">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/lem-og-2.png" alt="Lem — beginner friendly" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #4</span>
+        <h2 class="reason__title">The Perfect First Toy (Beginner-Approved)</h2>
+        <p class="reason__text">Your first toy doesn't have to be scary. Lem keeps everything simple with soft starter settings, easy one-button controls, and a cute shape that's anything but intimidating. <span class="reason__highlight">The gentle low levels let you ease in without pressure</span> — explore slowly, and let your body take over when it's ready. It's never too late to start.</p>
+        <a href="#product" class="reason__cta">Begin Your Journey</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ REASON #5 — Image Left, Text Right ═══════ -->
+  <section class="reason">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/gallery-2.jpg" alt="Lem — 12 intensity settings" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #5</span>
+        <h2 class="reason__title">12 Ways to Feel Exactly What You Want</h2>
+        <p class="reason__text">From whisper-gentle to powerfully intense, Lem's 12 settings let you tailor every moment to exactly what you're craving. Want something quick on a busy day? Easy. Want to take your time and melt into a long weekend session? Even better. <span class="reason__highlight">With this much variety, your pleasure always fits your pace — and it never gets boring.</span></p>
+        <a href="#product" class="reason__cta">Play Your Way</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ COMPARISON TABLE (ARMRA Innovation #4) ═══════ -->
+  <section class="comparison">
+    <div class="comparison__inner">
+      <h2 class="comparison__title">How Lem Compares</h2>
+      <table class="comparison__table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="highlight">Lem by Nancy</th>
+            <th>The Rose</th>
+            <th>Others</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Whisper-Quiet</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10007;</span></td>
+            <td><span class="cross">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>Medical-Grade Silicone</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10007;</span></td>
+            <td>Varies</td>
+          </tr>
+          <tr>
+            <td>Intensity Levels</td>
+            <td class="highlight">12 modes</td>
+            <td>6 modes</td>
+            <td>3–8</td>
+          </tr>
+          <tr>
+            <td>Air-Pulse Technology</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>Waterproof</td>
+            <td class="highlight"><span class="check">&#10003;</span> IPX7</td>
+            <td>Splash-proof</td>
+            <td>Varies</td>
+          </tr>
+          <tr>
+            <td>Discreet Design</td>
+            <td class="highlight"><span class="check">&#10003;</span> Cute lemon</td>
+            <td><span class="cross">&#10007;</span></td>
+            <td><span class="cross">&#10007;</span></td>
+          </tr>
+          <tr>
+            <td>USB-C Charging</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10007;</span></td>
+            <td>Varies</td>
+          </tr>
+          <tr>
+            <td>30-Day Free Returns</td>
+            <td class="highlight"><span class="check">&#10003;</span></td>
+            <td><span class="cross">&#10007;</span></td>
+            <td>Varies</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══════ BENEFITS SUMMARY GRID (ARMRA Innovation #5) ═══════ -->
+  <section class="benefits-grid">
+    <div class="benefits-grid__inner">
+      <h2 class="benefits-grid__title">What Happened After 3 Weeks With Lem</h2>
+      <div class="benefits-grid__items">
+        <div class="benefits-grid__item">
+          <div class="benefits-grid__stat">83%</div>
+          <p class="benefits-grid__stat-label">said Lem helped them climax faster</p>
+        </div>
+        <div class="benefits-grid__item">
+          <div class="benefits-grid__stat">71%</div>
+          <p class="benefits-grid__stat-label">felt more confident exploring their bodies</p>
+        </div>
+        <div class="benefits-grid__item">
+          <div class="benefits-grid__stat">64%</div>
+          <p class="benefits-grid__stat-label">reported better mood and sleep after use</p>
+        </div>
+      </div>
+      <p style="text-align:center; font-size:11px; color:var(--charcoal); margin-top:24px; opacity:0.7;">Based on a survey of real Hello Nancy customers (2025).</p>
+    </div>
+  </section>
+
+  <!-- ═══════ REASON #6 — Image Right (reversed), Text Left ═══════ -->
+  <section class="reason reason--reverse">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/lem-og-4.png" alt="Lem — intense orgasms" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #6</span>
+        <h2 class="reason__title">Toe-Curling Orgasms (That Last)</h2>
+        <p class="reason__text">Hard to finish? Want something stronger? Lem's air-suction is the magic trick. <span class="reason__highlight">It hugs the exact spot you need, pulls gently at first, then builds into that melt-your-knees intensity</span> reviewers can't stop talking about. It makes those big, overwhelming orgasms feel way more accessible — and way more fun.</p>
+        <a href="#product" class="reason__cta">Discover Yourself</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ REASON #7 — Image Left, Text Right ═══════ -->
+  <section class="reason">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/lem-og-6.png" alt="Lem — medical-grade quality" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #7</span>
+        <h2 class="reason__title">Get Addicted (In the Best Way)</h2>
+        <p class="reason__text">Lem is crafted with <span class="reason__highlight">100% medical-grade silicone that feels silky, soft, and completely body-safe.</span> It's waterproof for bath and shower fun, has a battery that goes and goes, and uses a single button so you can control it without fumbling. Easy to clean, easy to use, easy to love.</p>
+        <a href="#product" class="reason__cta">Feel the Quality</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ 3-COLUMN REVIEW CARDS (ARMRA Innovation #6) ═══════ -->
+  <section class="review-cards">
+    <div class="review-cards__inner">
+      <h2 class="review-cards__title">Real Reviews. Real Pleasure.</h2>
+      <div class="review-cards__grid">
+        <!-- Card 1 — Quiet -->
+        <div class="review-card">
+          <span class="review-card__tag">Discreet</span>
+          <div class="review-card__stars">★★★★★</div>
+          <h3 class="review-card__title">Quiet, discreet, and totally addictive.</h3>
+          <p class="review-card__text">I live with my partner and two teenagers, so I need quiet. Lem is whisper silent — it's my go-to after long workdays. The suction patterns are chef's kiss, and it's surprisingly gentle yet intense at the same time.</p>
+          <p class="review-card__author">Sophie</p>
+          <p class="review-card__verified">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            Verified Buyer
+          </p>
+        </div>
+        <!-- Card 2 — Powerful -->
+        <div class="review-card">
+          <span class="review-card__tag">Powerful</span>
+          <div class="review-card__stars">★★★★★</div>
+          <h3 class="review-card__title">Multiple Os my first time</h3>
+          <p class="review-card__text">Setting 1 was eh. Setting 2 was — okay now you are talking. Setting 3, I believe I screamed the neighbors name! This little lemon has been all my life! Women you NEED this product!</p>
+          <p class="review-card__author">Anonymous</p>
+          <p class="review-card__verified">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            Verified Buyer
+          </p>
+        </div>
+        <!-- Card 3 — Couples -->
+        <div class="review-card">
+          <span class="review-card__tag">Couples</span>
+          <div class="review-card__stars">★★★★★</div>
+          <h3 class="review-card__title">Regret not trying sooner</h3>
+          <p class="review-card__text">I bought it as a gift for my wife. I regret waiting so long. You should hear what she said after using it for the first time. Lem takes playtime to another level. Its lemon shape is super cool.</p>
+          <p class="review-card__author">Piotr</p>
+          <p class="review-card__verified">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            Verified Buyer
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ REASON #8 — Image Right (reversed), Text Left ═══════ -->
+  <section class="reason reason--reverse">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/lem-og-5.png" alt="Lem — couples play" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #8</span>
+        <h2 class="reason__title">Your New Secret Weapon in Bed (For Both of You)</h2>
+        <p class="reason__text">Lem slides into partnered play like it was meant to be there. It adds more teasing, more connection, and plenty of "oh my god" moments without replacing anything real. <span class="reason__highlight">It's playful, intimate, and ridiculously fun.</span> A calm, no-pressure way to add a little extra magic to your time together.</p>
+        <a href="#product" class="reason__cta">Explore Together</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ REASON #9 — Image Left, Text Right ═══════ -->
+  <section class="reason">
+    <div class="reason__inner">
+      <div class="reason__image">
+        <img src="images/gallery-3.jpg" alt="Lem — trusted by 500,000+ women" loading="lazy">
+      </div>
+      <div class="reason__content">
+        <span class="reason__badge">Reason #9</span>
+        <h2 class="reason__title">Trusted by 500,000+ People Who Made the Switch</h2>
+        <p class="reason__text">With over 500,000 happy customers and a growing community, Lem is the go-to choice for anyone looking to close the pleasure gap in a quiet, playful, and stress-free way — <span class="reason__highlight">while feeling more at home in their own body.</span></p>
+        <a href="#product" class="reason__cta">Shop Now</a>
+        <span class="reason__cta-promo">Up to 50% Off + Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PRODUCT CTA SECTION ═══════ -->
+  <section class="product-cta" id="product">
+    <div class="product-cta__inner">
+      <h2 class="product-cta__title">This Year, Feel What 500,000+ Swear By</h2>
+      <p class="product-cta__subtitle">Packed with air-pulse tech, silky medical-grade silicone, and 12 customizable sensations — Lem mimics real oral stimulation for deep, body-responsive pleasure. Quietly, comfortably, and oh-so-effortlessly.</p>
+      <div class="product-cta__image">
+        <img src="images/gallery-4.jpg" alt="Lem by Nancy">
+      </div>
+      <div class="product-cta__price">
+        <span class="product-cta__price-original">$69.95</span>
+        <span class="product-cta__price-sale">$34.97</span>
+        <span class="product-cta__price-badge">SAVE 50%</span>
+      </div>
+      <a href="https://hellonancy.com/products/lem" class="product-cta__btn">Add to Cart — $34.97</a>
+      <div class="product-cta__trust">
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2DC653" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Discreet shipping
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2DC653" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          30-day free returns
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2DC653" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Limited stock
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FINAL CTA ═══════ -->
+  <section class="final-cta">
+    <div class="final-cta__inner">
+      <img src="images/logo.png" alt="Nancy" class="final-cta__logo">
+      <p class="final-cta__text">Join 500,000+ women who stopped settling and started feeling.</p>
+      <a href="#product" class="final-cta__btn">Shop Now — Up to 50% Off</a>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER (Ultra-minimal) ═══════ -->
+  <footer class="footer">
+    &copy; 2026, Hello Nancy · All rights reserved · <a href="#">Privacy</a> · <a href="#">Terms</a>
+  </footer>
+
+  <!-- ═══════ MINIMAL JS ═══════ -->
+  <script>
+    // Sticky header scroll effect
+    const header = document.getElementById('stickyHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
