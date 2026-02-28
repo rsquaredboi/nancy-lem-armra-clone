@@ -182,6 +182,215 @@
       margin-top: 8px; font-weight: 500;
     }
 
+    /* ── INFOGRAPHIC PANELS (replace product photos for data-driven sections) ── */
+    .reason__infographic {
+      border-radius: 12px; overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: var(--cream);
+      padding: 32px;
+      display: flex; flex-direction: column; justify-content: center;
+      min-height: 400px;
+    }
+
+    /* -- Decibel Chart (Reason #1) -- */
+    .db-chart { display: flex; flex-direction: column; gap: 20px; }
+    .db-chart__title {
+      font-family: var(--font-heading); font-size: 18px;
+      font-weight: 600; text-align: center; margin-bottom: 8px;
+    }
+    .db-chart__row {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .db-chart__label {
+      font-size: 13px; font-weight: 600; width: 120px;
+      text-align: right; flex-shrink: 0;
+    }
+    .db-chart__bar-wrap {
+      flex: 1; height: 36px; background: rgba(0,0,0,0.04);
+      border-radius: 8px; overflow: hidden; position: relative;
+    }
+    .db-chart__bar {
+      height: 100%; border-radius: 8px;
+      display: flex; align-items: center; padding-left: 12px;
+      font-size: 13px; font-weight: 700; color: var(--white);
+      transition: width 0.8s ease-out;
+    }
+    .db-chart__bar--lem { width: 25%; background: var(--green); }
+    .db-chart__bar--rose { width: 55%; background: var(--star); }
+    .db-chart__bar--trad { width: 80%; background: #e74c3c; }
+    .db-chart__bar--conv { width: 65%; background: rgba(0,0,0,0.15); }
+    .db-chart__bar--conv span { color: var(--gray); }
+    .db-chart__ref {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 11px; color: var(--gray); margin-top: 4px;
+      padding-left: 132px;
+    }
+    .db-chart__ref-line {
+      width: 65%; height: 1px; border-top: 2px dashed rgba(0,0,0,0.15);
+    }
+    .db-chart__icon {
+      font-size: 24px; width: 40px; text-align: center; flex-shrink: 0;
+    }
+
+    /* -- Feature Comparison Card (Reason #3) -- */
+    .vs-card { display: flex; flex-direction: column; gap: 0; }
+    .vs-card__header {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px; margin-bottom: 20px;
+    }
+    .vs-card__col {
+      text-align: center; padding: 16px 12px;
+      border-radius: 10px;
+    }
+    .vs-card__col--lem { background: var(--neon); }
+    .vs-card__col--rose { background: rgba(0,0,0,0.04); }
+    .vs-card__col-name {
+      font-family: var(--font-heading); font-size: 18px;
+      font-weight: 700; margin-bottom: 4px;
+    }
+    .vs-card__col-sub { font-size: 11px; color: var(--gray); }
+    .vs-card__rows { display: flex; flex-direction: column; gap: 0; }
+    .vs-card__row {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px; padding: 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .vs-card__row:last-child { border-bottom: none; }
+    .vs-card__cell {
+      text-align: center; font-size: 13px; display: flex;
+      flex-direction: column; align-items: center; gap: 2px;
+    }
+    .vs-card__feature {
+      font-size: 11px; color: var(--gray); text-transform: uppercase;
+      letter-spacing: 0.5px; font-weight: 600;
+      grid-column: 1 / -1; text-align: center; padding-bottom: 2px;
+    }
+    .vs-card__val { font-weight: 700; font-size: 15px; }
+    .vs-card__val--win { color: var(--green); }
+    .vs-card__val--lose { color: #ccc; }
+
+    /* -- Intensity Spectrum (Reason #5) -- */
+    .spectrum { display: flex; flex-direction: column; gap: 24px; }
+    .spectrum__title {
+      font-family: var(--font-heading); font-size: 18px;
+      font-weight: 600; text-align: center;
+    }
+    .spectrum__bar-wrap {
+      position: relative; padding: 0 8px;
+    }
+    .spectrum__bar {
+      height: 20px; border-radius: 10px;
+      background: linear-gradient(90deg, #e8f5e9 0%, var(--neon) 30%, var(--star) 60%, var(--pink) 100%);
+      position: relative;
+    }
+    .spectrum__dots {
+      position: absolute; top: 50%; left: 0; right: 0;
+      display: flex; justify-content: space-between;
+      padding: 0 4px; transform: translateY(-50%);
+    }
+    .spectrum__dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--white); border: 2px solid rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .spectrum__dot:hover { transform: scale(1.4); }
+    .spectrum__labels {
+      display: flex; justify-content: space-between;
+      font-size: 12px; color: var(--gray); font-weight: 500;
+    }
+    .spectrum__modes {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 12px; margin-top: 8px;
+    }
+    .spectrum__mode {
+      text-align: center; padding: 14px 8px;
+      background: var(--white); border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .spectrum__mode-range {
+      font-family: var(--font-heading); font-size: 22px;
+      font-weight: 700; color: var(--black); margin-bottom: 4px;
+    }
+    .spectrum__mode-label { font-size: 11px; color: var(--gray); font-weight: 500; }
+    .spectrum__mode-desc { font-size: 12px; color: #555; margin-top: 4px; }
+
+    /* -- Quality Grid (Reason #7) -- */
+    .quality-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .quality-item {
+      background: var(--white); border-radius: 12px;
+      padding: 20px; text-align: center;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .quality-item__icon {
+      width: 48px; height: 48px; margin: 0 auto 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+    }
+    .quality-item__label {
+      font-family: var(--font-heading); font-size: 14px;
+      font-weight: 700; margin-bottom: 4px;
+    }
+    .quality-item__desc { font-size: 12px; color: var(--gray); line-height: 1.4; }
+
+    /* -- Community Proof Dashboard (Reason #9) -- */
+    .community-proof { display: flex; flex-direction: column; gap: 20px; }
+    .community-proof__header {
+      text-align: center;
+    }
+    .community-proof__big-num {
+      font-family: var(--font-heading); font-size: 56px;
+      font-weight: 700; color: var(--black); line-height: 1;
+    }
+    .community-proof__big-label {
+      font-size: 13px; color: var(--gray); margin-top: 4px;
+    }
+    .community-proof__rating {
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px; margin-top: 12px;
+    }
+    .community-proof__rating-num {
+      font-family: var(--font-heading); font-size: 28px; font-weight: 700;
+    }
+    .community-proof__rating-stars { color: var(--star); font-size: 18px; letter-spacing: 2px; }
+    .community-proof__rating-count { font-size: 12px; color: var(--gray); }
+    .community-proof__bars { display: flex; flex-direction: column; gap: 6px; }
+    .community-proof__bar-row {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .community-proof__bar-label {
+      font-size: 12px; font-weight: 600; width: 24px; text-align: right;
+      color: var(--charcoal);
+    }
+    .community-proof__bar-track {
+      flex: 1; height: 14px; background: rgba(0,0,0,0.04);
+      border-radius: 7px; overflow: hidden;
+    }
+    .community-proof__bar-fill {
+      height: 100%; border-radius: 7px; background: var(--star);
+    }
+    .community-proof__bar-pct {
+      font-size: 11px; color: var(--gray); width: 32px;
+    }
+    .community-proof__counters {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 12px; margin-top: 4px;
+    }
+    .community-proof__counter {
+      text-align: center; background: var(--white);
+      border-radius: 10px; padding: 14px 8px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .community-proof__counter-num {
+      font-family: var(--font-heading); font-size: 22px;
+      font-weight: 700; color: var(--pink);
+    }
+    .community-proof__counter-label {
+      font-size: 11px; color: var(--gray); margin-top: 2px;
+    }
+
     /* ── TESTIMONIAL STORY BREAK (ARMRA Innovation #3) ── */
     .testimonial-break {
       background: var(--cream);
@@ -371,36 +580,6 @@
       display: flex; align-items: center; gap: 4px;
     }
 
-    /* ── STATS SECTION ── */
-    .stats {
-      padding: 64px 24px;
-      background: var(--white);
-      border-top: var(--border);
-    }
-    .stats__inner { max-width: var(--max-width); margin: 0 auto; }
-    .stats__title {
-      font-family: var(--font-heading); font-size: clamp(22px, 3vw, 28px);
-      font-weight: 600; text-align: center; margin-bottom: 40px;
-    }
-    .stats__grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
-    }
-    .stat-circle { text-align: center; }
-    .stat-circle__ring {
-      width: 140px; height: 140px; margin: 0 auto 16px;
-      border-radius: 50%; position: relative;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .stat-circle__ring svg { position: absolute; top: 0; left: 0; transform: rotate(-90deg); }
-    .stat-circle__value {
-      font-family: var(--font-heading); font-size: 36px;
-      font-weight: 700; color: var(--black); position: relative; z-index: 1;
-    }
-    .stat-circle__label {
-      font-size: 14px; color: #555; max-width: 180px;
-      margin: 0 auto; line-height: 1.5;
-    }
-
     /* ── FINAL CTA ── */
     .final-cta {
       padding: 64px 24px;
@@ -439,21 +618,28 @@
       .hero__image { order: -1; max-width: 320px; margin: 0 auto; }
       .reason__inner { grid-template-columns: 1fr; }
       .reason--reverse .reason__inner { direction: ltr; }
-      .reason__image { order: -1; max-width: 400px; margin: 0 auto; }
+      .reason__image, .reason__infographic { order: -1; max-width: 400px; margin: 0 auto; }
+      .reason__infographic { min-height: auto; padding: 24px; }
       .benefits-grid__items { grid-template-columns: 1fr; gap: 40px; }
       .review-cards__grid { grid-template-columns: 1fr; }
-      .stats__grid { grid-template-columns: 1fr; gap: 40px; }
       .comparison__table { font-size: 13px; }
       .comparison__table th, .comparison__table td { padding: 10px 12px; }
       .press-bar__logos { gap: 20px; }
       .press-bar__logos img { height: 18px; }
       .sticky-header__cta { padding: 8px 16px; font-size: 11px; }
+      .vs-card__col-name { font-size: 15px; }
+      .spectrum__modes { grid-template-columns: 1fr; }
+      .quality-grid { grid-template-columns: 1fr; }
+      .community-proof__counters { grid-template-columns: 1fr; }
+      .community-proof__big-num { font-size: 42px; }
+      .db-chart__label { width: 80px; font-size: 11px; }
+      .db-chart__ref { padding-left: 92px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ═══════ STICKY HEADER ═══════ -->
+  <!-- STICKY HEADER -->
   <header class="sticky-header" id="stickyHeader">
     <a href="#" class="sticky-header__logo">
       <img src="images/logo.png" alt="Nancy">
@@ -461,18 +647,18 @@
     <a href="#product" class="sticky-header__cta">Shop Now — Up to 50% Off</a>
   </header>
 
-  <!-- ═══════ URGENCY BANNER ═══════ -->
+  <!-- URGENCY BANNER -->
   <div class="urgency-banner">
     Spring Sale — <span>Up to 50% Off</span> + Free Discreet Shipping — No coupon needed
   </div>
 
-  <!-- ═══════ HERO SECTION ═══════ -->
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero__inner">
       <div class="hero__content">
         <!-- Social proof FIRST (ARMRA pattern) -->
         <div class="hero__stars">
-          <svg width="80" height="16" viewBox="0 0 80 16"><text x="0" y="14" font-size="14" fill="#ffb74a">★★★★★</text></svg>
+          <svg width="80" height="16" viewBox="0 0 80 16"><text x="0" y="14" font-size="14" fill="#ffb74a">&#9733;&#9733;&#9733;&#9733;&#9733;</text></svg>
           <span class="hero__stars-text">4.7 stars · 15,000+ reviews · 1,000,000+ O's</span>
         </div>
         <h1 class="hero__title">9 Reasons Women Are Obsessed With Lem (& Why It Keeps Selling Out)</h1>
@@ -486,7 +672,7 @@
     </div>
   </section>
 
-  <!-- ═══════ PRESS LOGOS BAR ═══════ -->
+  <!-- PRESS LOGOS BAR -->
   <div class="press-bar">
     <div class="press-bar__inner">
       <span class="press-bar__label">As seen on</span>
@@ -500,11 +686,45 @@
     </div>
   </div>
 
-  <!-- ═══════ REASON #1 — Image Left, Text Right ═══════ -->
+  <!-- ═══════ REASON #1 — INFOGRAPHIC: Decibel Comparison ═══════ -->
+  <!-- VISUAL STRATEGY: Functional claim ("whisper-quiet") needs DATA to prove it -->
   <section class="reason">
     <div class="reason__inner">
-      <div class="reason__image">
-        <img src="images/gallery-1.jpg" alt="Lem — compact and quiet" loading="lazy">
+      <div class="reason__infographic">
+        <div class="db-chart">
+          <p class="db-chart__title">How Quiet Is Lem, Really?</p>
+          <div class="db-chart__row">
+            <span class="db-chart__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2DC653" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+            </span>
+            <span class="db-chart__label">Lem</span>
+            <div class="db-chart__bar-wrap">
+              <div class="db-chart__bar db-chart__bar--lem"><span>~30 dB</span></div>
+            </div>
+          </div>
+          <div class="db-chart__row">
+            <span class="db-chart__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffb74a" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg>
+            </span>
+            <span class="db-chart__label">The Rose</span>
+            <div class="db-chart__bar-wrap">
+              <div class="db-chart__bar db-chart__bar--rose"><span>~50 dB</span></div>
+            </div>
+          </div>
+          <div class="db-chart__row">
+            <span class="db-chart__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e74c3c" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </span>
+            <span class="db-chart__label">Traditional</span>
+            <div class="db-chart__bar-wrap">
+              <div class="db-chart__bar db-chart__bar--trad"><span>60+ dB</span></div>
+            </div>
+          </div>
+          <div class="db-chart__ref">
+            <span>Normal conversation: ~60 dB</span>
+            <div class="db-chart__ref-line"></div>
+          </div>
+        </div>
       </div>
       <div class="reason__content">
         <span class="reason__badge">Reason #1</span>
@@ -516,11 +736,12 @@
     </div>
   </section>
 
-  <!-- ═══════ REASON #2 — Image Right (reversed), Text Left ═══════ -->
+  <!-- ═══════ REASON #2 — LIFESTYLE PHOTO: Portability in context ═══════ -->
+  <!-- VISUAL STRATEGY: Emotional/lifestyle claim needs ASPIRATIONAL imagery -->
   <section class="reason reason--reverse">
     <div class="reason__inner">
       <div class="reason__image">
-        <img src="images/gallery-5.jpg" alt="Lem — travel-friendly lifestyle" loading="lazy">
+        <img src="images/lem-lifestyle.jpg" alt="Lem — compact, travel-friendly design" loading="lazy">
       </div>
       <div class="reason__content">
         <span class="reason__badge">Reason #2</span>
@@ -532,11 +753,55 @@
     </div>
   </section>
 
-  <!-- ═══════ REASON #3 — Image Left, Text Right ═══════ -->
+  <!-- ═══════ REASON #3 — INFOGRAPHIC: Lem vs Rose Feature Card ═══════ -->
+  <!-- VISUAL STRATEGY: Comparison claim needs SIDE-BY-SIDE DATA -->
   <section class="reason">
     <div class="reason__inner">
-      <div class="reason__image">
-        <img src="images/gallery-4.jpg" alt="Lem — better than the Rose" loading="lazy">
+      <div class="reason__infographic">
+        <div class="vs-card">
+          <div class="vs-card__header">
+            <div class="vs-card__col vs-card__col--lem">
+              <p class="vs-card__col-name">Lem</p>
+              <p class="vs-card__col-sub">by Hello Nancy</p>
+            </div>
+            <div class="vs-card__col vs-card__col--rose">
+              <p class="vs-card__col-name">The Rose</p>
+              <p class="vs-card__col-sub">Generic</p>
+            </div>
+          </div>
+          <div class="vs-card__rows">
+            <div class="vs-card__row">
+              <p class="vs-card__feature">Noise Level</p>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--win">Whisper ~30dB</span></div>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--lose">Audible ~50dB</span></div>
+            </div>
+            <div class="vs-card__row">
+              <p class="vs-card__feature">Intensity Modes</p>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--win">12 settings</span></div>
+              <div class="vs-card__cell"><span class="vs-card__val">6 settings</span></div>
+            </div>
+            <div class="vs-card__row">
+              <p class="vs-card__feature">Material</p>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--win">Medical-grade silicone</span></div>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--lose">Standard plastic</span></div>
+            </div>
+            <div class="vs-card__row">
+              <p class="vs-card__feature">Charging</p>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--win">USB-C</span></div>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--lose">Micro USB</span></div>
+            </div>
+            <div class="vs-card__row">
+              <p class="vs-card__feature">Waterproof</p>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--win">IPX7 full</span></div>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--lose">Splash only</span></div>
+            </div>
+            <div class="vs-card__row">
+              <p class="vs-card__feature">Free Returns</p>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--win">30-day</span></div>
+              <div class="vs-card__cell"><span class="vs-card__val vs-card__val--lose">None</span></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="reason__content">
         <span class="reason__badge">Reason #3</span>
@@ -548,7 +813,7 @@
     </div>
   </section>
 
-  <!-- ═══════ TESTIMONIAL STORY BREAK (ARMRA Innovation #3) ═══════ -->
+  <!-- TESTIMONIAL STORY BREAK (ARMRA Innovation #3) -->
   <section class="testimonial-break">
     <div class="testimonial-break__inner">
       <div class="testimonial-break__quote-mark">"</div>
@@ -561,11 +826,12 @@
     </div>
   </section>
 
-  <!-- ═══════ REASON #4 — Image Right (reversed), Text Left ═══════ -->
+  <!-- ═══════ REASON #4 — BRAND SHOOT: Approachable & soft ═══════ -->
+  <!-- VISUAL STRATEGY: "Beginner-friendly" claim needs WARM, APPROACHABLE imagery -->
   <section class="reason reason--reverse">
     <div class="reason__inner">
       <div class="reason__image">
-        <img src="images/lem-og-2.png" alt="Lem — beginner friendly" loading="lazy">
+        <img src="images/brand-shoot-1.jpg" alt="Lem — approachable, beginner-friendly design" loading="lazy">
       </div>
       <div class="reason__content">
         <span class="reason__badge">Reason #4</span>
@@ -577,11 +843,54 @@
     </div>
   </section>
 
-  <!-- ═══════ REASON #5 — Image Left, Text Right ═══════ -->
+  <!-- ═══════ REASON #5 — INFOGRAPHIC: 12-Intensity Spectrum ═══════ -->
+  <!-- VISUAL STRATEGY: Functional feature ("12 settings") needs MECHANISM VISUALIZATION -->
   <section class="reason">
     <div class="reason__inner">
-      <div class="reason__image">
-        <img src="images/gallery-2.jpg" alt="Lem — 12 intensity settings" loading="lazy">
+      <div class="reason__infographic">
+        <div class="spectrum">
+          <p class="spectrum__title">Your Pleasure, Your Intensity</p>
+          <div class="spectrum__bar-wrap">
+            <div class="spectrum__bar">
+              <div class="spectrum__dots">
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+                <span class="spectrum__dot"></span>
+              </div>
+            </div>
+          </div>
+          <div class="spectrum__labels">
+            <span>Gentle whisper</span>
+            <span>Medium pulse</span>
+            <span>Full intensity</span>
+          </div>
+          <div class="spectrum__modes">
+            <div class="spectrum__mode">
+              <p class="spectrum__mode-range">1–4</p>
+              <p class="spectrum__mode-label">Warm Up</p>
+              <p class="spectrum__mode-desc">Soft & teasing. Perfect for beginners.</p>
+            </div>
+            <div class="spectrum__mode">
+              <p class="spectrum__mode-range">5–8</p>
+              <p class="spectrum__mode-label">Sweet Spot</p>
+              <p class="spectrum__mode-desc">Building. Most loved by reviewers.</p>
+            </div>
+            <div class="spectrum__mode">
+              <p class="spectrum__mode-range">9–12</p>
+              <p class="spectrum__mode-label">Full Power</p>
+              <p class="spectrum__mode-desc">Intense. Toe-curling. No words.</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="reason__content">
         <span class="reason__badge">Reason #5</span>
@@ -593,7 +902,7 @@
     </div>
   </section>
 
-  <!-- ═══════ COMPARISON TABLE (ARMRA Innovation #4) ═══════ -->
+  <!-- COMPARISON TABLE (ARMRA Innovation #4) -->
   <section class="comparison">
     <div class="comparison__inner">
       <h2 class="comparison__title">How Lem Compares</h2>
@@ -660,7 +969,7 @@
     </div>
   </section>
 
-  <!-- ═══════ BENEFITS SUMMARY GRID (ARMRA Innovation #5) ═══════ -->
+  <!-- BENEFITS SUMMARY GRID (ARMRA Innovation #5) -->
   <section class="benefits-grid">
     <div class="benefits-grid__inner">
       <h2 class="benefits-grid__title">What Happened After 3 Weeks With Lem</h2>
@@ -682,7 +991,7 @@
     </div>
   </section>
 
-  <!-- ═══════ REASON #6 — Image Right (reversed), Text Left ═══════ -->
+  <!-- ═══════ REASON #6 — PRODUCT PHOTO (kept: product IS the visual proof here) ═══════ -->
   <section class="reason reason--reverse">
     <div class="reason__inner">
       <div class="reason__image">
@@ -698,11 +1007,55 @@
     </div>
   </section>
 
-  <!-- ═══════ REASON #7 — Image Left, Text Right ═══════ -->
+  <!-- ═══════ REASON #7 — INFOGRAPHIC: Quality Feature Grid ═══════ -->
+  <!-- VISUAL STRATEGY: Engineering/quality claim needs FEATURE CALLOUTS -->
   <section class="reason">
     <div class="reason__inner">
-      <div class="reason__image">
-        <img src="images/lem-og-6.png" alt="Lem — medical-grade quality" loading="lazy">
+      <div class="reason__infographic">
+        <div class="quality-grid">
+          <div class="quality-item">
+            <div class="quality-item__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <p class="quality-item__label">Medical-Grade Silicone</p>
+            <p class="quality-item__desc">100% body-safe, hypoallergenic, silky smooth</p>
+          </div>
+          <div class="quality-item">
+            <div class="quality-item__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.8"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <p class="quality-item__label">IPX7 Waterproof</p>
+            <p class="quality-item__desc">Full submersion. Bath, shower, anywhere.</p>
+          </div>
+          <div class="quality-item">
+            <div class="quality-item__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.8"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </div>
+            <p class="quality-item__label">USB-C Fast Charge</p>
+            <p class="quality-item__desc">Universal charging. 2+ hrs of play time.</p>
+          </div>
+          <div class="quality-item">
+            <div class="quality-item__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <p class="quality-item__label">One-Button Simple</p>
+            <p class="quality-item__desc">No fumbling. Press to play, press to change.</p>
+          </div>
+          <div class="quality-item">
+            <div class="quality-item__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <p class="quality-item__label">30-Day Returns</p>
+            <p class="quality-item__desc">Try it risk-free. Love it or send it back.</p>
+          </div>
+          <div class="quality-item">
+            <div class="quality-item__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5a1 1 0 0 1-1 1h-1"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <p class="quality-item__label">Discreet Shipping</p>
+            <p class="quality-item__desc">Plain box. No branding. Your secret.</p>
+          </div>
+        </div>
       </div>
       <div class="reason__content">
         <span class="reason__badge">Reason #7</span>
@@ -714,7 +1067,7 @@
     </div>
   </section>
 
-  <!-- ═══════ 3-COLUMN REVIEW CARDS (ARMRA Innovation #6) ═══════ -->
+  <!-- 3-COLUMN REVIEW CARDS (ARMRA Innovation #6) -->
   <section class="review-cards">
     <div class="review-cards__inner">
       <h2 class="review-cards__title">Real Reviews. Real Pleasure.</h2>
@@ -722,7 +1075,7 @@
         <!-- Card 1 — Quiet -->
         <div class="review-card">
           <span class="review-card__tag">Discreet</span>
-          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <h3 class="review-card__title">Quiet, discreet, and totally addictive.</h3>
           <p class="review-card__text">I live with my partner and two teenagers, so I need quiet. Lem is whisper silent — it's my go-to after long workdays. The suction patterns are chef's kiss, and it's surprisingly gentle yet intense at the same time.</p>
           <p class="review-card__author">Sophie</p>
@@ -734,7 +1087,7 @@
         <!-- Card 2 — Powerful -->
         <div class="review-card">
           <span class="review-card__tag">Powerful</span>
-          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <h3 class="review-card__title">Multiple Os my first time</h3>
           <p class="review-card__text">Setting 1 was eh. Setting 2 was — okay now you are talking. Setting 3, I believe I screamed the neighbors name! This little lemon has been all my life! Women you NEED this product!</p>
           <p class="review-card__author">Anonymous</p>
@@ -746,7 +1099,7 @@
         <!-- Card 3 — Couples -->
         <div class="review-card">
           <span class="review-card__tag">Couples</span>
-          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <h3 class="review-card__title">Regret not trying sooner</h3>
           <p class="review-card__text">I bought it as a gift for my wife. I regret waiting so long. You should hear what she said after using it for the first time. Lem takes playtime to another level. Its lemon shape is super cool.</p>
           <p class="review-card__author">Piotr</p>
@@ -759,11 +1112,12 @@
     </div>
   </section>
 
-  <!-- ═══════ REASON #8 — Image Right (reversed), Text Left ═══════ -->
+  <!-- ═══════ REASON #8 — BRAND SHOOT: Couples/intimacy mood ═══════ -->
+  <!-- VISUAL STRATEGY: Emotional/relational claim needs MOOD-SETTING imagery -->
   <section class="reason reason--reverse">
     <div class="reason__inner">
       <div class="reason__image">
-        <img src="images/lem-og-5.png" alt="Lem — couples play" loading="lazy">
+        <img src="images/brand-shoot-2.jpg" alt="Lem — designed for couples play" loading="lazy">
       </div>
       <div class="reason__content">
         <span class="reason__badge">Reason #8</span>
@@ -775,11 +1129,63 @@
     </div>
   </section>
 
-  <!-- ═══════ REASON #9 — Image Left, Text Right ═══════ -->
+  <!-- ═══════ REASON #9 — INFOGRAPHIC: Community Proof Dashboard ═══════ -->
+  <!-- VISUAL STRATEGY: Community/social proof claim needs DATA VISUALIZATION -->
   <section class="reason">
     <div class="reason__inner">
-      <div class="reason__image">
-        <img src="images/gallery-3.jpg" alt="Lem — trusted by 500,000+ women" loading="lazy">
+      <div class="reason__infographic">
+        <div class="community-proof">
+          <div class="community-proof__header">
+            <p class="community-proof__big-num">500K+</p>
+            <p class="community-proof__big-label">happy customers and counting</p>
+            <div class="community-proof__rating">
+              <span class="community-proof__rating-num">4.7</span>
+              <span class="community-proof__rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="community-proof__rating-count">(15,000+ reviews)</span>
+            </div>
+          </div>
+          <div class="community-proof__bars">
+            <div class="community-proof__bar-row">
+              <span class="community-proof__bar-label">5&#9733;</span>
+              <div class="community-proof__bar-track"><div class="community-proof__bar-fill" style="width:78%"></div></div>
+              <span class="community-proof__bar-pct">78%</span>
+            </div>
+            <div class="community-proof__bar-row">
+              <span class="community-proof__bar-label">4&#9733;</span>
+              <div class="community-proof__bar-track"><div class="community-proof__bar-fill" style="width:14%"></div></div>
+              <span class="community-proof__bar-pct">14%</span>
+            </div>
+            <div class="community-proof__bar-row">
+              <span class="community-proof__bar-label">3&#9733;</span>
+              <div class="community-proof__bar-track"><div class="community-proof__bar-fill" style="width:5%"></div></div>
+              <span class="community-proof__bar-pct">5%</span>
+            </div>
+            <div class="community-proof__bar-row">
+              <span class="community-proof__bar-label">2&#9733;</span>
+              <div class="community-proof__bar-track"><div class="community-proof__bar-fill" style="width:2%"></div></div>
+              <span class="community-proof__bar-pct">2%</span>
+            </div>
+            <div class="community-proof__bar-row">
+              <span class="community-proof__bar-label">1&#9733;</span>
+              <div class="community-proof__bar-track"><div class="community-proof__bar-fill" style="width:1%"></div></div>
+              <span class="community-proof__bar-pct">1%</span>
+            </div>
+          </div>
+          <div class="community-proof__counters">
+            <div class="community-proof__counter">
+              <p class="community-proof__counter-num">1M+</p>
+              <p class="community-proof__counter-label">orgasms delivered</p>
+            </div>
+            <div class="community-proof__counter">
+              <p class="community-proof__counter-num">92%</p>
+              <p class="community-proof__counter-label">would recommend</p>
+            </div>
+            <div class="community-proof__counter">
+              <p class="community-proof__counter-num">40+</p>
+              <p class="community-proof__counter-label">countries shipped to</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="reason__content">
         <span class="reason__badge">Reason #9</span>
@@ -791,13 +1197,13 @@
     </div>
   </section>
 
-  <!-- ═══════ PRODUCT CTA SECTION ═══════ -->
+  <!-- PRODUCT CTA SECTION -->
   <section class="product-cta" id="product">
     <div class="product-cta__inner">
       <h2 class="product-cta__title">This Year, Feel What 500,000+ Swear By</h2>
       <p class="product-cta__subtitle">Packed with air-pulse tech, silky medical-grade silicone, and 12 customizable sensations — Lem mimics real oral stimulation for deep, body-responsive pleasure. Quietly, comfortably, and oh-so-effortlessly.</p>
       <div class="product-cta__image">
-        <img src="images/gallery-4.jpg" alt="Lem by Nancy">
+        <img src="images/lem-product-alt.png" alt="Lem by Nancy">
       </div>
       <div class="product-cta__price">
         <span class="product-cta__price-original">$69.95</span>
@@ -822,7 +1228,7 @@
     </div>
   </section>
 
-  <!-- ═══════ FINAL CTA ═══════ -->
+  <!-- FINAL CTA -->
   <section class="final-cta">
     <div class="final-cta__inner">
       <img src="images/logo.png" alt="Nancy" class="final-cta__logo">
@@ -831,12 +1237,12 @@
     </div>
   </section>
 
-  <!-- ═══════ FOOTER (Ultra-minimal) ═══════ -->
+  <!-- FOOTER (Ultra-minimal) -->
   <footer class="footer">
     &copy; 2026, Hello Nancy · All rights reserved · <a href="#">Privacy</a> · <a href="#">Terms</a>
   </footer>
 
-  <!-- ═══════ MINIMAL JS ═══════ -->
+  <!-- MINIMAL JS -->
   <script>
     // Sticky header scroll effect
     const header = document.getElementById('stickyHeader');
